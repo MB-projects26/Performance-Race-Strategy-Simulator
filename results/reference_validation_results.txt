@@ -1,0 +1,84 @@
+REAL-WORLD TYRE DEGRADATION VALIDATION — REFERENCE RUN
+=====================================================
+
+Source: 2024 Austrian Grand Prix race
+Compound: MEDIUM
+Whole stints cross-validated: 10
+
+Fold 1 - held out: GAS stint 3
+Linear: 0.09
+Quadratic: 0.0
+Baseline RMSE: 0.6571 s
+Calibrated RMSE: 0.5115 s
+
+Fold 2 - held out: OCO stint 3
+Linear: 0.09
+Quadratic: 0.0
+Baseline RMSE: 0.6285 s
+Calibrated RMSE: 0.4427 s
+
+Fold 3 - held out: PIA stint 1
+Linear: 0.095
+Quadratic: 0.0
+Baseline RMSE: 0.8021 s
+Calibrated RMSE: 0.3824 s
+
+Fold 4 - held out: RUS stint 2
+Linear: 0.095
+Quadratic: 0.0
+Baseline RMSE: 0.2969 s
+Calibrated RMSE: 0.1706 s
+
+Fold 5 - held out: NOR stint 1
+Linear: 0.095
+Quadratic: 0.0
+Baseline RMSE: 0.6644 s
+Calibrated RMSE: 0.3954 s
+
+Fold 6 - held out: VER stint 1
+Linear: 0.09
+Quadratic: 0.0
+Baseline RMSE: 0.2300 s
+Calibrated RMSE: 0.3054 s
+
+Fold 7 - held out: SAI stint 1
+Linear: 0.095
+Quadratic: 0.0
+Baseline RMSE: 0.5709 s
+Calibrated RMSE: 0.3675 s
+
+Fold 8 - held out: HAM stint 1
+Linear: 0.095
+Quadratic: 0.0
+Baseline RMSE: 0.4397 s
+Calibrated RMSE: 0.3240 s
+
+Fold 9 - held out: PER stint 1
+Linear: 0.09
+Quadratic: 0.0
+Baseline RMSE: 0.4991 s
+Calibrated RMSE: 0.4621 s
+
+Fold 10 - held out: TSU stint 1
+Linear: 0.095
+Quadratic: 0.0
+Baseline RMSE: 0.4029 s
+Calibrated RMSE: 0.2555 s
+
+Mean baseline held-out RMSE: 0.5192 s
+Mean calibrated held-out RMSE: 0.3617 s
+Mean held-out MAE: 0.2955 s
+RMSE standard deviation: 0.1017 s
+Worst held-out RMSE: 0.5115 s
+Improved folds: 9 / 10
+Mean RMSE improvement: 30.3%
+
+FINAL REAL-DATA FIT
+Linear coefficient: 0.095
+Quadratic coefficient: 0.0
+All-data fit RMSE: 0.3615 s
+
+LIMITATION
+Validation measures relative lap-time evolution through a tyre stint. It does
+not establish that the complete simulator predicts absolute Formula 1 lap times
+to this accuracy.

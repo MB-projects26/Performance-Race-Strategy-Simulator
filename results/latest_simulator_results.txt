@@ -1,0 +1,21 @@
+RACE STRATEGY & PERFORMANCE SIMULATOR
+=====================================
+
+Best one-stop: Medium -> Soft
+One-stop pit: lap 29
+One-stop time: 4530.065 s
+
+Best two-stop: Medium -> Soft -> Soft
+Two-stop pits: laps 19 and 34
+Two-stop time: 4502.473 s
+Two-stop advantage: 27.592 s
+
+Traffic-aware best pit: lap 28
+Traffic-aware finish: P2
+
+One-stop fixed Monte Carlo mean: 4568.236 s
+One-stop uncertainty-aware mean: 4568.173 s
+Two-stop fixed Monte Carlo mean: 4543.072 s
+Two-stop uncertainty-aware mean: 4542.701 s
+
+One/two-stop pit-loss crossover: 49.59 s

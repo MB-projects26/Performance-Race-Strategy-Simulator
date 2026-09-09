@@ -1,0 +1,20 @@
+REAL-WORLD TYRE DEGRADATION VALIDATION
+======================================
+
+Race: 2024 Austria
+Compound: MEDIUM
+Cross-validation stints: 10
+
+Mean baseline held-out RMSE: 0.5192 s
+Mean calibrated held-out RMSE: 0.3617 s
+Mean calibrated held-out MAE: 0.2955 s
+Held-out RMSE standard deviation: 0.1017 s
+Worst held-out RMSE: 0.5115 s
+Folds improved: 9/10
+Mean RMSE improvement: 30.33%
+
+Final all-data linear coefficient: 0.095
+Final all-data quadratic coefficient: 0.0
+Final all-data fit RMSE: 0.3615 s
+
+LIMITATION: Validation evaluates relative lap-time evolution through real tyre stints. It does not validate absolute F1 car pace or the complete race simulator.
