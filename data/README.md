@@ -16,4 +16,4 @@ real_validation_clean_laps.csv
 
 from the cleaned 2024 Austrian Grand Prix timing data.
 
-The lap-level CSV is not pre-populated in this packaged copy because the raw cleaned rows were generated on the user's local machine and were not uploaded into this chat. The repository therefore does not fabricate or substitute raw observations.
+`real_validation_clean_laps.csv` is generated locally at runtime from FastF1 and is therefore not committed to the repository.

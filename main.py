@@ -180,6 +180,29 @@ def plot_real_stints(result, show_plots):
     finish_plot("06_real_stint_validation.png", show_plots)
 
 
+def plot_coefficient_stability(result, show_plots):
+    labels = []
+    linear = []
+    quadratic = []
+
+    for fold in result["fold_results"]:
+        driver, stint, _ = fold["validation_key"]
+        labels.append(f"{driver}\nStint {stint}")
+        linear.append(fold["linear"])
+        quadratic.append(fold["quadratic"])
+
+    x_positions = list(range(len(labels)))
+    plt.figure(figsize=(11, 6))
+    plt.plot(x_positions, linear, marker="o", label="Linear coefficient")
+    plt.plot(x_positions, quadratic, marker="o", label="Quadratic coefficient")
+    plt.xticks(x_positions, labels)
+    plt.xlabel("Held-Out Stint")
+    plt.ylabel("Fitted Degradation Coefficient")
+    plt.title("Cross-Validation Coefficient Stability")
+    plt.legend()
+    finish_plot("07_coefficient_stability.png", show_plots)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -238,6 +261,7 @@ def main():
         )
         plot_real_cross_validation(real_result, show_plots)
         plot_real_stints(real_result, show_plots)
+        plot_coefficient_stability(real_result, show_plots)
 
     print("\nFINAL SUMMARY")
     print("-------------")

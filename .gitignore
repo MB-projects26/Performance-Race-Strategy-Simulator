@@ -4,6 +4,7 @@ __pycache__/
 .venv/
 venv/
 fastf1_cache/
+/data/real_validation_clean_laps.csv
 .ipynb_checkpoints/
 .DS_Store
 Thumbs.db

@@ -183,6 +183,12 @@ One held-out stint became worse after calibration. That result is retained rathe
 
 The comparison above shows relative lap-time evolution through the selected real Medium-tyre stints. Each stint is referenced relative to its own clean starting observation so that the validation focuses on tyre-stint evolution rather than differences in absolute car performance.
 
+### Coefficient Stability
+
+![Fitted degradation coefficients across held-out stints](plots/07_coefficient_stability.png)
+
+The fitted degradation coefficients across the leave-one-stint-out folds show how the calibration changes when each stint is excluded from training. The quadratic coefficient repeatedly reaches zero for this dataset.
+
 ## Development History
 
 Before the project was packaged into this modular repository, it was developed locally through a series of standalone Python scripts. I have preserved **all 30 development snapshots** in [`development_history/`](development_history/) and documented the progression in [`DEVELOPMENT_HISTORY.md`](DEVELOPMENT_HISTORY.md).
@@ -231,10 +237,11 @@ race-strategy-performance-simulator/
     ├── 03_field_strategy.png
     ├── 04_sensitivity.png
     ├── 05_real_cross_validation.png
-    └── 06_real_validation_coefficients.png
+    ├── 06_real_stint_validation.png
+    └── 07_coefficient_stability.png
 ```
 
-A live run with FastF1 additionally generates `data/real_validation_clean_laps.csv`, `results/real_validation_results.txt` and an observed-vs-modelled real stint plot.
+A live run with FastF1 generates `data/real_validation_clean_laps.csv` and `results/real_validation_results.txt`, and refreshes the real-validation plots. The cleaned lap-level CSV is generated locally and is not committed to the repository.
 
 ## Running the Project
 
@@ -281,9 +288,8 @@ The repository intentionally keeps the final presentation compact:
 3. **Traffic-aware field strategy** — final position against pit timing.
 4. **Pit-loss sensitivity** — robustness and one/two-stop crossover.
 5. **Real cross-validation** — baseline versus calibrated held-out RMSE.
-6. **Coefficient stability** — fitted degradation coefficients across real held-out stints.
-
-A live FastF1 run can also generate observed-versus-modelled relative stint evolution from the cleaned lap-level dataset.
+6. **Real stint validation** — observed-versus-modelled relative tyre-stint evolution.
+7. **Coefficient stability** — fitted degradation coefficients across real held-out stints.
 
 ## Limitations
 
