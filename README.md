@@ -6,7 +6,7 @@ The project began as a simple deterministic tyre-degradation model and was progr
 
 ## Headline Results
 
-Reference run using the portfolio model:
+Reference run using the baseline model:
 
 | Result | Value |
 |---|---:|
@@ -279,7 +279,7 @@ python -m unittest discover -s tests -v
 
 FastF1 data is cached locally after the first successful download.
 
-## Portfolio Plots
+## Analysis Plots
 
 The repository intentionally keeps the final presentation compact:
 
@@ -329,8 +329,6 @@ Future work should be data-led rather than feature-led. The most valuable extens
 - car- or driver-specific random effects;
 - tyre temperature and track evolution where suitable data is available;
 - more detailed traffic/overtaking modelling only if it can be validated.
-
-The current technical scope is intentionally frozen for portfolio use.
 
 ## Skills Demonstrated
 

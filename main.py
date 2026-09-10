@@ -1,4 +1,4 @@
-"""Run the complete race-strategy portfolio analysis.
+"""Run the complete race-strategy analysis.
 
 Examples
 --------

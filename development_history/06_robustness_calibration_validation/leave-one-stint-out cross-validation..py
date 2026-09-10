@@ -4039,9 +4039,7 @@ def run_leave_one_stint_out_cv():
     #
     # This fit is NOT cross-validation.
     #
-    # It is the model you would eventually deploy after
-    # cross-validation has demonstrated acceptable
-    # generalisation.
+    # Final model fitted using all eligible stints after cross-validation.
     #
     # =========================================================
 

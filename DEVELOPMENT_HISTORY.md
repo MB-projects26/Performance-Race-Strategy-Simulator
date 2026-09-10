@@ -79,16 +79,6 @@ Some snapshots differ only by plotting, graph labels, constraints or a relativel
 
 The repetition also makes the learning process visible: early scripts duplicate logic and grow large before later work is refactored into the modular repository.
 
-## How to discuss this in an interview
-
-A concise and accurate explanation is:
-
-> I developed the simulator locally before I started using Git for the project. I began with a basic one-stop model and saved new scripts as I added or corrected individual features. That produced a lot of standalone versions, including some that only changed plotting or constraints. Once the technical model and validation work were mature enough, I refactored it into the modular GitHub repository. I kept the old scripts here because they show how the project actually developed.
-
-If asked about AI assistance:
-
-> I used AI as a coding and learning assistant during parts of the project. I still worked through the model incrementally, ran each stage, interpreted the results and made the modelling decisions with the aim of understanding what each addition changed. I can explain the assumptions, equations, optimisation logic, validation method and limitations.
-
 ## Maintained version
 
 These files are historical snapshots. For the current implementation, use the modular Python files in the repository root.
